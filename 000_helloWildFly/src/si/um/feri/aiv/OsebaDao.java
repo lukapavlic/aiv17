@@ -23,7 +23,7 @@ public class OsebaDao {
 		try {
 			conn = baza.getConnection();
 			conn.createStatement().execute("create table if not exists oseba(id int auto_increment, ime varchar, priimek varchar)");
-			//MySql: conn.createStatement().execute("create table oseba(id int auto_increment, ime varchar(255), priimek varchar(255), primary key (id))");
+			//mysql: conn.createStatement().execute("create table oseba(id int auto_increment, ime varchar(255), priimek varchar(255), primary key (id))");
 		} finally {
 			if (conn != null)
 				conn.close();

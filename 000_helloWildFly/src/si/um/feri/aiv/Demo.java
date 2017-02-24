@@ -2,7 +2,6 @@ package si.um.feri.aiv;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-
 import javax.annotation.Resource;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,7 +14,6 @@ import javax.sql.DataSource;
 public class Demo extends HttpServlet {
 
 	private static final long serialVersionUID = 5522000541678491661L;
-
 	
 	@Resource(lookup="java:jboss/datasources/ExampleDS")
 	DataSource baza;
@@ -33,12 +31,10 @@ public class Demo extends HttpServlet {
 			pw.println("<li>"+oo+"</li>");
 		}
 		pw.println("</ul>");
-		
 	}
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-
 		PrintWriter pw = res.getWriter();
 
 		pw.println("<!DOCTYPE html>");
