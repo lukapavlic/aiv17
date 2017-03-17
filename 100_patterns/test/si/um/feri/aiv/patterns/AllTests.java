@@ -10,7 +10,8 @@ import org.junit.runners.Suite.SuiteClasses;
 	si.um.feri.aiv.patterns.singleton.SinglePostarLazyTest.class,
 	si.um.feri.aiv.patterns.singleton.SinglePostarTest.class,
 	si.um.feri.aiv.patterns.adapter.PostarTest.class,
-	si.um.feri.aiv.patterns.observer.StudentTest.class
+	si.um.feri.aiv.patterns.observer.StudentTest.class,
+	si.um.feri.aiv.patterns.strategija.SpletnaTrgovinaTest.class
 })
 public class AllTests {
 
