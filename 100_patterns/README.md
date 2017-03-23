@@ -5,3 +5,4 @@ Nekateri primeri iz vaj:
  - adapter
  - opazovalec
  - strategija
+ - iterator
