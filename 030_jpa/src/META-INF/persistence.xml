@@ -5,6 +5,7 @@
 	<persistence-unit name="030_jpa">
 		<jta-data-source>java:jboss/datasources/MySqlDS</jta-data-source>
 		<class>si.um.feri.aiv.vao.Oseba</class>
+		<class>si.um.feri.aiv.vao.Posta</class>
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
 			<property name="hibernate.show_sql" value="false" />
