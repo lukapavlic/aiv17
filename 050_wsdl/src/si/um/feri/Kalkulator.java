@@ -2,17 +2,15 @@ package si.um.feri;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.jws.WebService;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @WebService
 public class Kalkulator {
-
-	Logger log=LoggerFactory.getLogger(Kalkulator.class);
 	
+	Logger log=LoggerFactory.getLogger(Kalkulator.class);
+
 	public int sestej(int a, int b) {
 		log.info("Sestevam "+a+" in "+b);
 		return a+b;
