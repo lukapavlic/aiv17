@@ -4,16 +4,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Edinec - implementacija s kreiranjem objekta ob prvi uporabi
+ * Edinec - implementacija s kreiranjem objekta neodvisno od uporabe
  * privaten konstruktor in pridobivanje objekta preko metode getInstance
  */
 public class SinglePostar {
 	
 	Logger log=LoggerFactory.getLogger(SinglePostar.class);
 
-	private static SinglePostar instance=null;
-	public static synchronized SinglePostar getInstance() {
-		if (instance==null) instance=new SinglePostar();
+	private static SinglePostar instance=new SinglePostar();
+	public static SinglePostar getInstance() {
 		return instance;
 	}
 	
